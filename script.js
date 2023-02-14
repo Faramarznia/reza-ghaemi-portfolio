@@ -43,7 +43,7 @@ setInterval(() => {
     document.querySelector(`${randomly}`).style.opacity = 0.4;
     document.querySelector(`${randomly}`).style.filter = "grayscale(100%)";
     document.querySelector(`${randomly}`).style.transition = "400ms";
-  }, 2000);
+  }, 3000);
 }, 700);
 setInterval(() => {
   const randomly = filters[Math.floor(Math.random() * filters.length)];
@@ -54,5 +54,16 @@ setInterval(() => {
     document.querySelector(`${randomly}`).style.opacity = 0.4;
     document.querySelector(`${randomly}`).style.filter = "grayscale(100%)";
     document.querySelector(`${randomly}`).style.transition = "400ms";
-  }, 2000);
+  }, 2500);
 }, 1000);
+setInterval(() => {
+  const randomly = filters[Math.floor(Math.random() * filters.length)];
+  document.querySelector(`${randomly}`).style.opacity = 1;
+  document.querySelector(`${randomly}`).style.filter = "grayscale(0%)";
+  document.querySelector(`${randomly}`).style.transition = "400ms";
+  setInterval(() => {
+    document.querySelector(`${randomly}`).style.opacity = 0.4;
+    document.querySelector(`${randomly}`).style.filter = "grayscale(100%)";
+    document.querySelector(`${randomly}`).style.transition = "400ms";
+  }, 2300);
+}, 1300);
