@@ -79,10 +79,12 @@ a {
 }
 .landing-img {
   z-index: -1;
-  display: flex;
   position: absolute;
-  top: 148px;
-  right: 120px;
+  left: 55.52%;
+  right: 6.2%;
+  top: 13.5%;
+  bottom: 85.58%;
+  mix-blend-mode: normal;
 }
 
 .landing > p {
