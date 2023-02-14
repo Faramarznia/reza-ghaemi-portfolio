@@ -310,10 +310,12 @@ a {
 .portfolio-card {
   overflow: hidden;
   display: flex;
-  justify-content: center;
   overflow-x: scroll;
   white-space: nowrap;
   scroll-snap-type: x proximity;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: center;
 }
 .portfolio-card::-webkit-scrollbar {
   display: none;
@@ -325,9 +327,6 @@ a {
 }
 .card-main {
   background: #efefef;
-}
-.card-main > img {
-  filter: grayscale(0%);
 }
 .subtitle {
   font-family: "Poppins-semibold";
@@ -352,21 +351,26 @@ a {
   font-size: 16px;
   padding: 0px 32px 32px 32px;
 }
-.card {
+.card-below {
   background: #efefef;
-  filter: grayscale(100%);
+  display: none;
 }
-
-.card > p {
-  width: auto;
+.card-below > p {
   margin: 0px;
   font-family: "Poppins-regular";
   font-size: 16px;
   padding: 0px 32px 32px 32px;
 }
+.card {
+  filter: grayscale(100%);
+}
 .card:hover {
   transition: 300ms;
   filter: grayscale(0%);
+}
+.card:hover .card-below {
+  display: block;
+  transition: 1s;
 }
 .gallery > h1 {
   display: flex;
