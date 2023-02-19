@@ -18,7 +18,7 @@
   font-family: "Poppins-semibold";
   src: url(assets/Poppins/Poppins-SemiBold.ttf);
 }
-body{
+body {
   margin: 0px;
 }
 .container {
@@ -423,6 +423,81 @@ footer > h5 {
   font-size: 24px;
   font-family: "Poppins-light";
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   display: none;
+}
+.education-courses > h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 130px;
+  font-family: "Poppins-bold";
+  font-size: 36px;
+  margin-bottom: 0px;
+}
+.education-courses > span {
+  display: flex;
+  justify-content: center;
+  padding-left: 200px;
+  margin-bottom: 100px;
+}
+.title-animate {
+  color: #ffffff;
+  overflow: hidden;
+  display: flex;
+  font-family: "Poppins-light";
+  font-size: 20px;
+  margin-bottom: 24px;
+  scroll-snap-align: center;
+  overflow-x: scroll;
+  scroll-snap-type: x proximity;
+  justify-content: space-between;
+}
+.title-button {
+  height: fit-content;
+  display: inline-block;
+  position: relative;
+  align-items: center;
+  padding: 10px 20px;
+  margin-inline: 12px;
+  border: 0px;
+  border-radius: 100px;
+  box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.01);
+}
+
+.title-animate > .back {
+  flex: none;
+  flex-wrap: nowrap;
+  position: relative;
+  justify-content: space-between;
+  animation: icon-animate-back 20s infinite;
+  animation-timing-function: linear;
+  left: 0;
+}
+.title-animate > .forward {
+  flex: none;
+  flex-wrap: nowrap;
+  position: relative;
+  justify-content: space-between;
+  animation: icon-animate-back 20s infinite;
+  animation-timing-function: linear;
+  left: 0;
+}
+
+.title-animate > .back-2 {
+  flex: none;
+  flex-wrap: nowrap;
+  position: relative;
+  justify-content: space-between;
+  animation: icon-animate-back 20s infinite;
+  animation-timing-function: linear;
+  animation-direction: reverse;
+}
+.title-animate > .forward-2 {
+  flex: none;
+  flex-wrap: nowrap;
+  position: relative;
+  justify-content: space-between;
+  animation: icon-animate-back 20s infinite;
+  animation-timing-function: linear;
+  animation-direction: reverse;
 }
