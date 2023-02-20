@@ -621,3 +621,139 @@ video:focus {
   animation-timing-function: linear;
   animation-direction: reverse;
 }
+.recommendations > h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+  font-family: "Poppins-bold";
+  font-size: 36px;
+  margin-bottom: 0px;
+}
+.recommendations > span {
+  display: flex;
+  justify-content: center;
+  padding-left: 365px;
+  margin-bottom: 100px;
+}
+.recommend {
+  overflow: hidden;
+  display: flex;
+  overflow-x: scroll;
+  white-space: nowrap;
+  scroll-snap-type: x proximity;
+  scroll-snap-align: center;
+  margin-bottom: 250px;
+}
+
+.recommend-card {
+  width: 400px;
+  height: 230px;
+  background-color: #efefef;
+  display: flex;
+  flex-direction: column;
+  margin-inline: 20px;
+  scroll-snap-align: center;
+}
+.recommend-card > div {
+  display: flex;
+}
+.recommend-card > div > img {
+  margin: 24px 0px 0px 24px;
+  width: 62px;
+  height: 62px;
+  border-radius: 50px;
+}
+.recommend-name > h1 {
+  font-family: "Poppins-bold";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  color: #4361ee;
+  margin: 24px 0px 8px 14px;
+}
+.recommend-name > h3 {
+  margin: 0px;
+  margin-left: 14px;
+  margin-top: -15px;
+  font-family: "Poppins-regular";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  color: #848484;
+}
+.recommend-card > div > svg {
+  margin: 32px 24px 24px 40px;
+}
+.recommend-card > p {
+  white-space: normal;
+  margin: 24px;
+  font-family: "Poppins-regular";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+}
+.recommend-card:not(:nth-child(3)) {
+  filter: grayscale(100%);
+}
+.recommend-card:hover {
+  transition: 300ms;
+  filter: grayscale(0%);
+}
+.email-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.email-box > h1 {
+  font-family: "Poppins-bold";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  margin: 0px;
+}
+.email-box > p {
+  text-align: center;
+  width: 635px;
+  font-family: "Poppins-regular";
+  color: #515151;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  margin-top: 36px;
+  margin-bottom: 48px;
+}
+.email-box > div {
+  position: relative;
+  width: 800px;
+  height: 80px;
+  margin-bottom: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+}
+input {
+  position: relative;
+  font-family: "Poppins-regular";
+  font-size: 26px;
+  width:500px;
+  height:40px;
+  border: 0px;
+  margin-left: 25px;
+}
+input::placeholder {
+  color: #515151;
+  font-size: 16px;
+  margin: 0px;
+}
+.email-btn {
+  background-color: #000000;
+  color: #ffffff;
+  border: 0px;
+  width: 200px;
+  height: 60px;
+  margin-right:10px ;
+}
