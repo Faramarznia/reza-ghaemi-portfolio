@@ -61,8 +61,10 @@ a {
   font-family: "Poppins-bold";
   font-size: 40px;
   margin-top: 140px;
+  width: fit-content;
 }
 .landing > h1 {
+  width: fit-content;
   margin: 0px;
   display: flex;
   align-items: center;
@@ -250,7 +252,6 @@ a {
   z-index: 0;
 }
 .random-animate {
-  width: 1920px;
   height: 100px;
   overflow: hidden;
   display: flex;
@@ -392,6 +393,7 @@ a {
   margin-bottom: 100px;
 }
 .img-container {
+  overflow: scroll;
   display: flex;
   margin-left: 20px;
   margin-bottom: 150px;
@@ -401,30 +403,6 @@ a {
 }
 .gallery-img > img {
   margin-bottom: 20px;
-}
-
-footer {
-  background-color: #efefef;
-  display: flex;
-  position: absolute;
-  width: 1920px;
-  height: 120px;
-  align-items: center;
-  justify-content: space-between;
-}
-footer > div {
-  margin-right: 200px;
-}
-footer > div > a {
-  margin-left: 24px;
-}
-footer > h5 {
-  margin-left: 200px;
-  font-size: 24px;
-  font-family: "Poppins-light";
-}
-::-webkit-scrollbar {
-  display: none;
 }
 .education-courses > h1 {
   display: flex;
@@ -739,8 +717,8 @@ input {
   position: relative;
   font-family: "Poppins-regular";
   font-size: 26px;
-  width:500px;
-  height:40px;
+  width: 500px;
+  height: 40px;
   border: 0px;
   margin-left: 25px;
 }
@@ -755,5 +733,26 @@ input::placeholder {
   border: 0px;
   width: 200px;
   height: 60px;
-  margin-right:10px ;
+  margin-right: 10px;
+}
+footer {
+  background-color: #efefef;
+  display: flex;
+  height: 120px;
+  align-items: center;
+  justify-content: space-between;
+}
+footer > div {
+  margin-right: 20px;
+}
+footer > div > a {
+  margin-left: 24px;
+}
+footer > h5 {
+  margin-left: 200px;
+  font-size: 24px;
+  font-family: "Poppins-light";
+}
+::-webkit-scrollbar {
+  display: none;
 }
