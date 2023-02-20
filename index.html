@@ -1013,8 +1013,15 @@
           commonly used to demonstrate the visual form of a document.
         </p>
         <div>
-          <input type="text" placeholder="Email" />
-          <button class="email-btn">SEND</button>
+          <form
+            action="https://formsubmit.co/faramarzniadeveloper@gmail.com"
+            method="POST"
+          >
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" value="http://127.0.0.1:5501/index.html" />
+            <button class="email-btn" type="submit">SEND</button>
+          </form>
         </div>
       </div>
     </main>
