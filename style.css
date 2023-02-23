@@ -22,7 +22,6 @@ body {
   margin: 0px;
 }
 .container {
-  width: 1520px;
   margin-right: 200px;
   margin-left: 200px;
 }
@@ -137,8 +136,11 @@ a {
   margin-bottom: 129px;
 }
 .completed-project {
-  width: 100%;
-  height: 594px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   background-color: #1a1a1a;
   color: #ffffff;
 }
@@ -151,12 +153,13 @@ a {
   justify-content: center;
   padding-top: 100px;
   margin: 0px;
+  margin-bottom: 100px;
 }
 .completed-project > div {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  margin-top: 100px;
 }
 .h2-number {
   font-size: 40px;
@@ -173,7 +176,8 @@ a {
   font-size: 24px;
   height: fit-content;
   font-family: "Poppins-medium";
-  margin: 0px 105px;
+  margin: 0px 100px;
+  margin-bottom: 100px;
 }
 .icon-card > p {
   margin: 0px;
@@ -404,9 +408,15 @@ a {
 .gallery-img > img {
   margin-bottom: 20px;
 }
-.education-courses > h1 {
+.education-courses {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+.education-courses > h1 {
   margin-top: 130px;
   font-family: "Poppins-bold";
   font-size: 36px;
@@ -414,23 +424,22 @@ a {
 }
 .education-courses > span {
   display: flex;
-  justify-content: center;
   padding-left: 200px;
   margin-bottom: 100px;
 }
 .video-container {
   display: flex;
-  margin-right: 200px;
-  margin-left: 200px;
-  margin-bottom: 100px;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap-reverse;
 }
 .video-container > video {
+  overflow: hidden;
   filter: grayscale(100%);
+  display: flex;
+  margin: 20px;
   width: 1000px;
   height: 600px;
-  left: 519px;
-  top: 0px;
 }
 video:hover,
 video:focus {
@@ -452,10 +461,11 @@ video:focus {
   background-color: #212121;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .fixed > h1 {
-  margin-top: 37px;
+  /* margin-top: 37px; */
   color: #ffffff;
   font-family: "Poppins-semibold";
   position: absolute;
@@ -683,12 +693,20 @@ video:focus {
   justify-content: center;
   align-items: center;
 }
+.email-box > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 .email-box > h1 {
   font-family: "Poppins-bold";
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
   margin: 0px;
+  text-align: center;
 }
 .email-box > p {
   text-align: center;
@@ -702,13 +720,14 @@ video:focus {
   margin-top: 36px;
   margin-bottom: 48px;
 }
-form{
+form {
   position: relative;
   width: 800px;
   height: 80px;
   margin-bottom: 200px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   border: 2px solid #000000;
   box-sizing: border-box;
@@ -717,8 +736,8 @@ input {
   position: relative;
   font-family: "Poppins-regular";
   font-size: 26px;
-  width: 500px;
-  height: 40px;
+  /* width: 500px;
+  height: 40px; */
   border: 0px;
   margin-left: 25px;
 }
@@ -755,4 +774,98 @@ footer > h5 {
 }
 ::-webkit-scrollbar {
   display: none;
+}
+
+@media all and (max-width: 1600px) {
+  .container {
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+  nav {
+    display: flex;
+    margin: 60px 100px 0px 100px;
+  }
+  .nav-link {
+    top: 60px;
+    right: 100px;
+  }
+  .landing-img {
+    opacity: 30%;
+    transition: 3s;
+  }
+  form {
+    width: 600px;
+    height: 60px;
+    margin-bottom: 200px;
+  }
+  .email-btn {
+    height: 40px;
+  }
+}
+
+/*Mobile Device*/
+@media all and (max-width: 768px) {
+  .landing-img {
+    display: none;
+  }
+  .nav-btn{
+    display: none;
+  }
+  .icon-header {
+    margin:0px;
+    width:32px ;
+    height: 40px;
+  }
+  .landing {
+    font-size: 26px;
+    margin-top: 140px;
+    width: fit-content;
+
+  }
+  .landing > h1 {
+    width: fit-content;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+  }
+  .landing > p {
+    margin-top: 10px;
+    width: 398px;
+    height: 114px;
+    margin-bottom: 52px;
+    font-size: 15px;
+  }
+ 
+  .container {
+    margin-right: 16px;
+    margin-left: 16px;
+  }
+  nav {
+    display: flex;
+    margin: 64px 160px 0px 16px;
+  }
+  .nav-link {
+    display: none;
+  }
+  .video-container > video {
+    width: 398px;
+    height: 280px;
+  }
+  form {
+    width: 400px;
+    height: 52px;
+    margin-bottom: 155px;
+  }
+  .email-btn {
+    width: 100px;
+    height: 44px;
+  }
+  .email-box > p {
+    width: 398px;
+    height: 94px;
+  }
+  .cours {
+    width: 398px;
+    height: 398px;
+  }
 }
