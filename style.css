@@ -570,9 +570,6 @@ video:focus {
   font-family: "Poppins-light";
   font-size: 20px;
   margin-bottom: 24px;
-  scroll-snap-align: center;
-  overflow-x: scroll;
-  scroll-snap-type: x proximity;
   justify-content: space-between;
 }
 .title-button {
