@@ -20,6 +20,7 @@
 }
 body {
   margin: 0px;
+  user-select: none;
 }
 .container {
   margin-right: 200px;
