@@ -67,3 +67,51 @@ setInterval(() => {
     document.querySelector(`${randomly}`).style.transition = "400ms";
   }, 2300);
 }, 1300);
+
+function scrollToProject() {
+  // Get the height of the window and the document
+  const windowHeight = window.innerHeight;
+  const documentHeight = document.body.clientHeight;
+
+  // Calculate the position to scroll to
+  const scrollTo = (documentHeight - windowHeight) / 3.65;
+
+  // Scroll to the middle of the page
+  window.scrollTo({
+    top: scrollTo,
+    behavior: "smooth",
+  });
+}
+function scrollToGallery() {
+  const windowHeight = window.innerHeight;
+  const documentHeight = document.body.clientHeight;
+
+  const scrollTo = (documentHeight - windowHeight) / 1.696;
+
+  window.scrollTo({
+    top: scrollTo,
+    behavior: "smooth",
+  });
+}
+function scrollToEducation() {
+  const windowHeight = window.innerHeight;
+  const documentHeight = document.body.clientHeight;
+
+  const scrollTo = (documentHeight - windowHeight) / 1.258;
+
+  window.scrollTo({
+    top: scrollTo,
+    behavior: "smooth",
+  });
+}
+function scrollToContact() {
+  const windowHeight = window.innerHeight;
+  const documentHeight = document.body.clientHeight;
+
+  const scrollTo = (documentHeight - windowHeight) / 0.5;
+
+  window.scrollTo({
+    top: scrollTo,
+    behavior: "smooth",
+  });
+}

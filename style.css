@@ -40,6 +40,9 @@ nav {
   font-size: 18px;
   margin-right: 24px;
 }
+.nav-btn:hover {
+  color: #4361ee;
+}
 a {
   text-decoration: none;
 }
