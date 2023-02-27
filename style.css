@@ -478,7 +478,6 @@ video:focus {
 }
 
 .fixed > h1 {
-  /* margin-top: 37px; */
   color: #ffffff;
   font-family: "Poppins-semibold";
   position: absolute;
@@ -591,7 +590,7 @@ video:focus {
   flex-wrap: nowrap;
   position: relative;
   justify-content: space-between;
-  animation: icon-animate-back 20s infinite;
+  animation: icon-animate-back 30s infinite;
   animation-timing-function: linear;
   left: 0;
 }
@@ -600,7 +599,7 @@ video:focus {
   flex-wrap: nowrap;
   position: relative;
   justify-content: space-between;
-  animation: icon-animate-back 20s infinite;
+  animation: icon-animate-back 30s infinite;
   animation-timing-function: linear;
   left: 0;
 }
@@ -609,7 +608,7 @@ video:focus {
   flex-wrap: nowrap;
   position: relative;
   justify-content: space-between;
-  animation: icon-animate-back 20s infinite;
+  animation: icon-animate-back 30s infinite;
   animation-timing-function: linear;
   animation-direction: reverse;
 }
@@ -618,7 +617,7 @@ video:focus {
   flex-wrap: nowrap;
   position: relative;
   justify-content: space-between;
-  animation: icon-animate-back 20s infinite;
+  animation: icon-animate-back 30s infinite;
   animation-timing-function: linear;
   animation-direction: reverse;
 }
