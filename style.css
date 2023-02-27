@@ -275,7 +275,7 @@ a {
   display: flex;
   position: relative;
   justify-content: space-between;
-  animation: icon-animate-back 20s infinite;
+  animation: icon-animate-back 30s infinite;
   animation-timing-function: linear;
   animation-delay: 1s;
   left: 0;
@@ -284,7 +284,7 @@ a {
   display: flex;
   position: relative;
   justify-content: space-between;
-  animation: icon-animate-back 20s infinite;
+  animation: icon-animate-back 30s infinite;
   animation-timing-function: linear;
   animation-delay: 1s;
   left: 0;
@@ -588,7 +588,7 @@ video:focus {
   flex-wrap: nowrap;
   position: relative;
   justify-content: space-between;
-  animation: icon-animate-back 20s infinite;
+  animation: icon-animate-back 30s infinite;
   animation-timing-function: linear;
   left: 0;
 }
@@ -597,7 +597,7 @@ video:focus {
   flex-wrap: nowrap;
   position: relative;
   justify-content: space-between;
-  animation: icon-animate-back 20s infinite;
+  animation: icon-animate-back 30s infinite;
   animation-timing-function: linear;
   left: 0;
 }
@@ -606,7 +606,7 @@ video:focus {
   flex-wrap: nowrap;
   position: relative;
   justify-content: space-between;
-  animation: icon-animate-back 20s infinite;
+  animation: icon-animate-back 30s infinite;
   animation-timing-function: linear;
   animation-direction: reverse;
 }
@@ -615,7 +615,7 @@ video:focus {
   flex-wrap: nowrap;
   position: relative;
   justify-content: space-between;
-  animation: icon-animate-back 20s infinite;
+  animation: icon-animate-back 30s infinite;
   animation-timing-function: linear;
   animation-direction: reverse;
 }
