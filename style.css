@@ -1,22 +1,22 @@
 @font-face {
   font-family: "Poppins-bold";
-  src: url(assets/Poppins/Poppins-Bold.ttf);
+  src: url("fonts/Poppins-bold.woff") format("woff");
 }
 @font-face {
   font-family: "Poppins-regular";
-  src: url(assets/Poppins/Poppins-Regular.ttf);
+  src: url("fonts/Poppins-Regular.woff") format("woff");
 }
 @font-face {
   font-family: "Poppins-medium";
-  src: url(assets/Poppins/Poppins-Medium.ttf);
+  src: url("fonts/Poppins-Medium.woff") format("woff");
 }
 @font-face {
   font-family: "Poppins-light";
-  src: url(assets/Poppins/Poppins-Light.ttf);
+  src: url("fonts/Poppins-Light.woff") format("woff");
 }
 @font-face {
   font-family: "Poppins-semibold";
-  src: url(assets/Poppins/Poppins-SemiBold.ttf);
+  src: url("fonts/Poppins-SemiBold.woff") format("woff");
 }
 body {
   margin: 0px;
