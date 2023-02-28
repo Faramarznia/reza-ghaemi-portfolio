@@ -315,6 +315,12 @@ a {
     transform: translateX(-100%);
   }
 }
+.design-portfolio {
+  width: 100%;
+  overflow-x: scroll;
+  white-space: nowrap;
+  text-align: center;
+}
 .design-portfolio > h1 {
   display: flex;
   justify-content: center;
@@ -329,12 +335,17 @@ a {
   padding-left: 140px;
   margin-bottom: 100px;
 }
+.content {
+  display: inline-block;
+}
+
 .portfolio-card {
   overflow: hidden;
   display: flex;
+  flex-direction: row;
   overflow-x: scroll;
   white-space: nowrap;
-  scroll-snap-type: x proximity;
+  scroll-snap-type: proximity;
   width: 100%;
   height: 100%;
   scroll-snap-align: center;
@@ -344,8 +355,6 @@ a {
 }
 .portfolio-card > div {
   margin-inline: 15px;
-  display: inline-block;
-  scroll-snap-align: center;
 }
 .card-main {
   background: #efefef;
@@ -416,10 +425,15 @@ a {
 .img-container {
   overflow: scroll;
   display: flex;
-  margin-left: 20px;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 150px;
+  margin-left: 16px;
 }
 .gallery-img {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   margin-right: 20px;
 }
 .gallery-img > img {
@@ -627,6 +641,13 @@ video:focus {
   animation-timing-function: linear;
   animation-direction: reverse;
 }
+.recommendations {
+  width: 100%;
+  overflow-x: scroll;
+/* 
+  text-align: center;
+  scroll-snap-align: center; */
+}
 .recommendations > h1 {
   display: flex;
   justify-content: center;
@@ -697,7 +718,7 @@ video:focus {
   font-size: 14px;
   line-height: 30px;
 }
-.recommend-card:not(:nth-child(3)) {
+.recommend-card {
   filter: grayscale(100%);
 }
 .recommend-card:hover {

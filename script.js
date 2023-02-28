@@ -115,3 +115,53 @@ function scrollToContact() {
     behavior: "smooth",
   });
 }
+
+const portfoContainer = document.querySelector(".portfolio-card");
+let isDown = false;
+let startX;
+let scrollLeft;
+
+portfoContainer.addEventListener("mousedown", (e) => {
+  isDown = true;
+  startX = e.pageX - portfoContainer.offsetLeft;
+  scrollLeft = portfoContainer.scrollLeft;
+});
+
+portfoContainer.addEventListener("mouseleave", () => {
+  isDown = false;
+});
+
+portfoContainer.addEventListener("mouseup", () => {
+  isDown = false;
+});
+
+portfoContainer.addEventListener("mousemove", (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - portfoContainer.offsetLeft;
+  const walk = (x - startX) * 0.8; // Adjust scroll speed here
+  portfoContainer.scrollLeft = scrollLeft - walk;
+});
+const recContainer = document.querySelector(".recommend");
+
+recContainer.addEventListener("mousedown", (e) => {
+  isDown = true;
+  startX = e.pageX - recContainer.offsetLeft;
+  scrollLeft = recContainer.scrollLeft;
+});
+
+recContainer.addEventListener("mouseleave", () => {
+  isDown = false;
+});
+
+recContainer.addEventListener("mouseup", () => {
+  isDown = false;
+});
+
+recContainer.addEventListener("mousemove", (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - recContainer.offsetLeft;
+  const walk = (x - startX) * 0.8; // Adjust scroll speed here
+  recContainer.scrollLeft = scrollLeft - walk;
+});
