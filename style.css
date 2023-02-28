@@ -821,7 +821,9 @@ footer > div > h5 {
   display: none;
 }
 
-@media all and (max-width: 1600px) {
+
+/*MacBoock & surface*/
+/* @media all and (max-width: 1600px) {
   .container {
     margin-right: 100px;
     margin-left: 100px;
@@ -846,7 +848,22 @@ footer > div > h5 {
   .email-btn {
     height: 40px;
   }
+} */
+@media only screen and (max-width: 1440px) {
+  body {
+    zoom: 75%;
+  }
 }
+/* @media only screen and (max-width: 1800px) {
+  body {
+    zoom: 80%;
+  } */
+/* } */
+
+
+
+
+
 
 /*Mobile Device*/
 @media all and (max-width: 768px) {
