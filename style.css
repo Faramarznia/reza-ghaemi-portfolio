@@ -644,9 +644,6 @@ video:focus {
 .recommendations {
   width: 100%;
   overflow-x: scroll;
-/* 
-  text-align: center;
-  scroll-snap-align: center; */
 }
 .recommendations > h1 {
   display: flex;
