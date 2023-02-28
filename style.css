@@ -424,6 +424,11 @@ a {
 }
 .gallery-img > img {
   margin-bottom: 20px;
+  filter: grayscale(100%);
+}
+.gallery-img > img:hover {
+  filter: grayscale(0%);
+  transition: 300ms;
 }
 .education-courses {
   display: flex;
