@@ -39,7 +39,7 @@ nav {
   font-family: "Poppins-regular";
   font-size: 18px;
   margin-right: 24px;
-  cursor:pointer ;
+  cursor: pointer;
 }
 .nav-btn:hover {
   color: #4361ee;
@@ -65,11 +65,11 @@ a {
   margin-bottom: 24px;
   font-size: 0px;
 }
-.container-landing{
+.container-landing {
   display: flex;
-  justify-content:left;
+  justify-content: left;
   align-items: center;
-  margin:0px 200px ;
+  margin: 0px 200px;
 }
 .landing {
   font-family: "Poppins-bold";
@@ -81,7 +81,6 @@ a {
   width: fit-content;
   margin: 0px;
   display: flex;
-  align-items: center;
 }
 .landing > h1 > div {
   display: flex;
@@ -97,7 +96,7 @@ a {
   border-radius: 50px;
   margin-left: 37px;
 }
-.landing-img {
+/* .landing-img {
   z-index: -1;
   position: absolute;
   left: 55.52%;
@@ -105,7 +104,7 @@ a {
   top: 13.5%;
   bottom: 85.58%;
   mix-blend-mode: normal;
-}
+} */
 
 .landing > p {
   font-family: "Poppins-regular";
@@ -156,7 +155,7 @@ a {
   height: 70px;
   border: none;
   margin-bottom: 129px;
-  cursor:pointer ;
+  cursor: pointer;
 }
 .completed-project {
   display: flex;
@@ -272,7 +271,6 @@ a {
 .project-card > div {
   overflow: hidden;
   height: 300px;
-  /* display: flex; */
 }
 .project-card:hover > div > img {
   transition: 300ms;
@@ -359,19 +357,13 @@ a {
   overflow-x: scroll;
   white-space: nowrap;
   scroll-snap-type: proximity;
-  width: 100%;
-  height: 100%;
   scroll-snap-align: center;
+  gap: 30px;
 }
 .portfolio-card::-webkit-scrollbar {
   display: none;
 }
-.portfolio-card > div {
-  margin-inline: 15px;
-}
-.card-main {
-  background: #efefef;
-}
+
 .subtitle {
   font-family: "Poppins-semibold";
   display: flex;
@@ -379,43 +371,54 @@ a {
   align-items: center;
   font-size: 24px;
   flex-direction: row;
-  padding: 32px 32px 8px 32px;
+  margin: 32px 32px 8px 32px;
 }
 .subtitle > h3 {
-  width: auto;
   margin: 0px;
 }
 .subtitle > svg {
   margin: 0px;
 }
-.card-main > p {
-  width: auto;
-  margin: 0px;
-  font-family: "Poppins-regular";
-  font-size: 16px;
-  padding: 0px 32px 32px 32px;
+.subtitle > h3:hover {
+  color: #4361ee;
+  transition: 150ms;
 }
 .card-below {
   background: #efefef;
   display: none;
+  cursor: pointer;
+}
+.card:nth-child(3) .card-below {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .card-below > p {
-  margin: 0px;
   font-family: "Poppins-regular";
   font-size: 16px;
-  padding: 0px 32px 32px 32px;
+  text-align: left;
+  margin: 0px 32px 32px 32px;
+  white-space: normal;
 }
-.card {
+.card:not(:nth-child(3)) {
   filter: grayscale(100%);
+  display: flex;
+  flex-direction: column;
 }
 .card:hover {
   transition: 300ms;
   filter: grayscale(0%);
 }
 .card:hover .card-below {
-  display: block;
-  transition: 1s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
+.card:hover {
+  transition: 0s;
+  background: #efefef;
+}
+
 .gallery {
   display: flex;
   justify-content: center;
@@ -880,11 +883,11 @@ footer > div > h5 {
   .nav-btn {
     display: none;
   }
- 
-  .container-landing{
+
+  .container-landing {
     justify-content: space-between;
 
-    margin:0px 20px ;
+    margin: 0px 20px;
   }
   .icon-header > svg {
     margin: 0px;
@@ -1014,13 +1017,32 @@ footer > div > h5 {
     margin-top: 70px;
   }
   .card {
-    filter: grayscale(0%);
     width: 330px;
     height: 393px;
+    display: flex;
+    flex-direction: column;
   }
   .card-below {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
+  .card-below > p {
+    text-align: left;
+    font-size: 14px;
+    margin: 0px 21px 30px 15px;
+  }
+  .subtitle > h3 {
+    margin: 0px;
+    font-size: 20px;
+  }
+  .subtitle {
+    margin: 33px 15px 20px 15px;
+  }
+  .card:not(:nth-child(3)) {
+    filter: grayscale(0%);
+  }
+
   .gallery > h1 {
     display: flex;
     flex-wrap: wrap-reverse;
