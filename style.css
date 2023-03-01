@@ -39,6 +39,7 @@ nav {
   font-family: "Poppins-regular";
   font-size: 18px;
   margin-right: 24px;
+  cursor:pointer ;
 }
 .nav-btn:hover {
   color: #4361ee;
@@ -155,6 +156,7 @@ a {
   height: 70px;
   border: none;
   margin-bottom: 129px;
+  cursor:pointer ;
 }
 .completed-project {
   display: flex;
