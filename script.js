@@ -166,6 +166,14 @@ recContainer.addEventListener("mousemove", (e) => {
   recContainer.scrollLeft = scrollLeft - walk;
 });
 
+const button = document.getElementById("blubutton");
+
+button.addEventListener("click", () => {
+  const url = "https://adplist.org/mentors/reza-ghaemi";
+
+  window.open(url, '_blank');
+});
+
 // const hamburger = document.querySelector(".hamburger")
 // const navMenu = document.querySelector(".nav-menu")
 
@@ -178,4 +186,3 @@ recContainer.addEventListener("mousemove", (e) => {
 //   hamburger.classList.remove("active")
 //   navMenu.classList.remove("active")
 // }))
-
