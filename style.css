@@ -43,6 +43,11 @@ nav {
 .nav-btn:hover {
   color: #4361ee;
 }
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
 }
@@ -59,7 +64,12 @@ a {
   margin-bottom: 24px;
   font-size: 0px;
 }
-
+.container-landing{
+  display: flex;
+  justify-content:left;
+  align-items: center;
+  margin:0px 200px ;
+}
 .landing {
   font-family: "Poppins-bold";
   font-size: 40px;
@@ -211,9 +221,10 @@ a {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin: 100px 0px 18px 0px;
 }
 .project-card {
-  margin: 100px 10px 200px 10px;
+  margin: 0px 10px 20px 10px;
   width: 500px;
   height: 550px;
   background-color: #efefef;
@@ -821,7 +832,6 @@ footer > div > h5 {
   display: none;
 }
 
-
 /*MacBoock & surface*/
 /* @media all and (max-width: 1600px) {
   .container {
@@ -857,13 +867,8 @@ footer > div > h5 {
 @media only screen and (min-width: 2000px) {
   body {
     zoom: 110%;
-  } 
+  }
 }
-
-
-
-
-
 
 /*Mobile Device*/
 @media all and (max-width: 768px) {
@@ -872,6 +877,12 @@ footer > div > h5 {
   }
   .nav-btn {
     display: none;
+  }
+ 
+  .container-landing{
+    justify-content: space-between;
+
+    margin:0px 20px ;
   }
   .icon-header > svg {
     margin: 0px;
@@ -931,7 +942,8 @@ footer > div > h5 {
     height: 40px;
   }
   .btn-blue {
-    width: 398px;
+    width: 100%;
+    /* width: 398px; */
     height: 70px;
     margin-bottom: 80px;
   }
