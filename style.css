@@ -1205,4 +1205,7 @@ footer > div > h5 {
   header {
     width: fit-content;
   }
+  body{
+    width: 430px;
+  }
 }
