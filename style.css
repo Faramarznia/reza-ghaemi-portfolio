@@ -1135,6 +1135,7 @@ footer > div > h5 {
     width: 398px;
     height: 280px;
   }
+
   form {
     width: 400px;
     height: 52px;
@@ -1154,6 +1155,14 @@ footer > div > h5 {
     width: 398px;
     height: 398px;
   }
+  .moving {
+    height: 378px;
+    width: 398px;
+  }
+
+  .moving > button {
+    width:  360px;
+    height: 50px;}
   .email-box > h1 {
     font-size: 28px;
     width: 398px;
@@ -1191,5 +1200,9 @@ footer > div > h5 {
   footer > div > h5 {
     margin-top: -20px;
     font-size: 18px;
+  }
+
+  header {
+    width: fit-content;
   }
 }
