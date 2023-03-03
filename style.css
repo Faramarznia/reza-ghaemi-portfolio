@@ -836,6 +836,26 @@ footer > div > h5 {
 ::-webkit-scrollbar {
   display: none;
 }
+.gallery-mobile {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.gallery-mobile > div {
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.gallery-mobile > div > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
 
 /*MacBoock & surface*/
 /* @media all and (max-width: 1600px) {
@@ -883,7 +903,6 @@ footer > div > h5 {
   .nav-btn {
     display: none;
   }
-
   .container-landing {
     justify-content: space-between;
 
@@ -1042,11 +1061,17 @@ footer > div > h5 {
   .card:not(:nth-child(3)) {
     filter: grayscale(0%);
   }
-
+  .gallery > div {
+    display: none;
+  }
+  .gallery-mobile {
+    display: flex;
+    margin-bottom: 100px;
+  }
   .gallery > h1 {
     display: flex;
     flex-wrap: wrap-reverse;
-    margin-top: 100px;
+    margin-top: 130px;
     width: 320px;
     height: 84px;
     text-align: center;
@@ -1057,34 +1082,7 @@ footer > div > h5 {
     padding-left: 170px;
     margin-bottom: 100px;
   }
-  .img-container {
-    display: inline;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-left: 20px;
-    margin-bottom: 150px;
-  }
-  #img44 {
-    display: none;
-  }
-  #img42 {
-    display: none;
-  }
-  #img43 {
-    display: none;
-  }
-  .gallery-img {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-right: 16px;
-  }
-  .gallery-img > img {
-    margin: 10px;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
+
   .education-courses > h1 {
     margin-top: 0px;
   }
