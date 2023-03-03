@@ -70,6 +70,7 @@ a {
   justify-content: left;
   align-items: center;
   margin: 0px 200px;
+  position: relative;
 }
 .landing {
   font-family: "Poppins-bold";
@@ -96,15 +97,16 @@ a {
   border-radius: 50px;
   margin-left: 37px;
 }
-/* .landing-img {
+.landing-img {
   z-index: -1;
   position: absolute;
-  left: 55.52%;
+  bottom: 0;
+  left: 52.52%;
   right: 6.2%;
-  top: 13.5%;
-  bottom: 85.58%;
-  mix-blend-mode: normal;
-} */
+
+  max-width: 100%;
+  height: auto;
+}
 
 .landing > p {
   font-family: "Poppins-regular";
@@ -436,10 +438,10 @@ a {
   margin-bottom: 100px;
 }
 .img-container {
-  overflow: scroll;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   margin-bottom: 150px;
   margin-left: 16px;
 }
@@ -854,33 +856,12 @@ footer > div > h5 {
   flex-direction: column;
 }
 
-/*MacBoock & surface*/
-/* @media all and (max-width: 1600px) {
-  .container {
-    margin-right: 100px;
-    margin-left: 100px;
-  }
-  nav {
-    display: flex;
-    margin: 60px 100px 0px 100px;
-  }
-  .nav-link {
-    top: 60px;
-    right: 100px;
-  }
+/* MacBoock & surface */
+@media all and (max-width: 1200px) {
   .landing-img {
-    opacity: 30%;
-    transition: 3s;
+    display: none;
   }
-  form {
-    width: 600px;
-    height: 60px;
-    margin-bottom: 200px;
-  }
-  .email-btn {
-    height: 40px;
-  }
-} */
+}
 @media only screen and (max-width: 1440px) {
   body {
     zoom: 75%;
@@ -902,7 +883,6 @@ footer > div > h5 {
   }
   .container-landing {
     justify-content: space-between;
-
     margin: 0px 20px;
   }
   .icon-header > svg {
@@ -1161,8 +1141,9 @@ footer > div > h5 {
   }
 
   .moving > button {
-    width:  360px;
-    height: 50px;}
+    width: 360px;
+    height: 50px;
+  }
   .email-box > h1 {
     font-size: 28px;
     width: 398px;
@@ -1179,7 +1160,7 @@ footer > div > h5 {
     display: flex;
     height: 120px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
   }
   footer > div {
     width: 430px;
@@ -1201,11 +1182,15 @@ footer > div > h5 {
     margin-top: -20px;
     font-size: 18px;
   }
-
   header {
     width: fit-content;
   }
-  body{
-    width: 430px;
+  body {
+    zoom: 100%;
+  }
+}
+@media all and (max-width: 934px) {
+  .landing-img {
+    display: none;
   }
 }
