@@ -173,9 +173,7 @@ a {
   font-family: "Poppins-bold";
   display: flex;
   justify-content: center;
-  padding-top: 100px;
-  margin: 0px;
-  margin-bottom: 100px;
+  margin: 100px 0px;
 }
 .completed-project > div {
   display: flex;
@@ -198,8 +196,7 @@ a {
   font-size: 24px;
   height: fit-content;
   font-family: "Poppins-medium";
-  margin: 0px 100px;
-  margin-bottom: 100px;
+  margin: 0px 105px 100px 105px;
 }
 .icon-card > p {
   margin: 0px;
@@ -1007,7 +1004,6 @@ footer > div > h5 {
   .project-card {
     margin: 0px 16px 20px 16px;
   }
-
   .project-card {
     width: 398px;
     height: 572px;
@@ -1021,7 +1017,14 @@ footer > div > h5 {
   .project-card > p {
     margin: 0px 26px 32px 25px;
   }
-
+  .project-card > div > img {
+    width: 398;
+    height: 300px;
+  }
+  .project-card > div {
+    width: 398;
+    height: 300px;
+  }
   .random-animate {
     margin-top: 80px;
   }
@@ -1086,6 +1089,10 @@ footer > div > h5 {
   .education-courses > h1 {
     margin-top: 0px;
   }
+  .cours > img {
+    width: 398px;
+    height: 398;
+  }
   .recommendations > h1 {
     margin-top: 100px;
     font-weight: 700;
@@ -1110,7 +1117,6 @@ footer > div > h5 {
     margin-left: 10px;
     margin-top: -20px;
   }
-
   .recommend-card > div > img {
     width: 50px;
     height: 50px;
