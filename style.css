@@ -1150,12 +1150,10 @@ footer > div > h5 {
   }
   .email-box > h1 {
     font-size: 28px;
+    width: 398px;
   }
   input {
     margin: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   input::placeholder {
     font-size: 14px;
