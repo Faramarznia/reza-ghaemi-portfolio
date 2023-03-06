@@ -82,6 +82,8 @@ a {
   width: fit-content;
   margin: 0px;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .landing > h1 > div {
   display: flex;
@@ -96,7 +98,7 @@ a {
   font-size: 20.2px;
   border-radius: 50px;
   margin-left: 37px;
-margin-top: 40px;
+
 }
 .landing-img {
   z-index: -1;
@@ -856,6 +858,12 @@ footer > div > h5 {
   align-items: center;
   flex-direction: column;
 }
+#check {
+  display: none;
+}
+.checkbtn {
+  display: none;
+}
 
 /* MacBoock & surface */
 @media all and (max-width: 1200px) {
@@ -879,12 +887,61 @@ footer > div > h5 {
   .landing-img {
     display: none;
   }
-  .nav-btn {
-    display: none;
+  header {
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav {
+    width: 100%;
+    margin: 64px 16px 0px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    top: 0%;
+    left: 1000%;
+    height: 100%;
+    margin-right: 16px;
+    padding: 100px 20px;
+
+    z-index: 1;
+    text-align: center;
+    transition: all 0.4s;
+  }
+  .menu > button {
+    background: none;
+    font-size: 24px;
+    margin-top: 50px;
+    font-family: "Poppins-semibold";
+  }
+  .checkbtn {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    right: 16px;
+    top: 64px;
+    margin: 0px;
+  }
+
+  #check:checked ~ .menu {
+    left: 0%;
   }
   .container-landing {
     justify-content: space-between;
-    margin: 0px 20px;
+    margin: 0px 16px;
   }
   .icon-header > svg {
     margin: 0px;
@@ -952,10 +1009,6 @@ footer > div > h5 {
   .container {
     margin-right: 16px;
     margin-left: 16px;
-  }
-  nav {
-    display: flex;
-    margin: 64px 160px 0px 16px;
   }
   .nav-link {
     display: none;

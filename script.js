@@ -68,7 +68,10 @@ setInterval(() => {
   }, 2300);
 }, 1300);
 
+const toggle = document.getElementById("check");
+
 function scrollToProject() {
+  toggle.checked = false;
   // Get the height of the window and the document
   const windowHeight = window.innerHeight;
   const documentHeight = document.body.clientHeight;
@@ -83,6 +86,7 @@ function scrollToProject() {
   });
 }
 function scrollToGallery() {
+  toggle.checked = false;
   const windowHeight = window.innerHeight;
   const documentHeight = document.body.clientHeight;
 
@@ -94,6 +98,7 @@ function scrollToGallery() {
   });
 }
 function scrollToEducation() {
+  toggle.checked = false;
   const windowHeight = window.innerHeight;
   const documentHeight = document.body.clientHeight;
 
@@ -105,6 +110,7 @@ function scrollToEducation() {
   });
 }
 function scrollToContact() {
+  toggle.checked = false;
   const windowHeight = window.innerHeight;
   const documentHeight = document.body.clientHeight;
 
@@ -171,7 +177,7 @@ const button = document.getElementById("blubutton");
 button.addEventListener("click", () => {
   const url = "https://adplist.org/mentors/reza-ghaemi";
 
-  window.open(url, '_blank');
+  window.open(url, "_blank");
 });
 
 // const hamburger = document.querySelector(".hamburger")
