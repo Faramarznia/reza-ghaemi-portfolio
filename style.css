@@ -340,6 +340,7 @@ a {
   font-family: "Poppins-bold";
   font-size: 36px;
   margin-bottom: 10px;
+  
 }
 .design-portfolio > span {
   display: flex;
@@ -347,10 +348,6 @@ a {
   padding-left: 140px;
   margin-bottom: 100px;
 }
-.content {
-  display: inline-block;
-}
-
 .portfolio-card {
   overflow: hidden;
   display: flex;
@@ -419,7 +416,6 @@ a {
   transition: 0s;
   background: #efefef;
 }
-
 .gallery {
   display: flex;
   justify-content: center;
