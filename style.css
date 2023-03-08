@@ -98,7 +98,6 @@ a {
   font-size: 20.2px;
   border-radius: 50px;
   margin-left: 37px;
-
 }
 .landing-img {
   z-index: -1;
@@ -441,10 +440,13 @@ a {
   margin-bottom: 100px;
 }
 .img-container {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  overflow: scroll;
+  overflow-x: scroll;
+  scroll-snap-align: center;
   margin-bottom: 150px;
   margin-left: 16px;
 }
@@ -916,7 +918,6 @@ footer > div > h5 {
     height: 100%;
     margin-right: 16px;
     padding: 100px 20px;
-
     z-index: 1;
     text-align: center;
     transition: all 0.4s;
